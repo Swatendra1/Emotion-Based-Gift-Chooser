@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <div class="login-box">
+        <h2>Login</h2>
+        <!-- Username -->
+        <div class="input-box">
+            <span>👤</span>
+            <input type="text" id="username" placeholder="Username">
+        </div>
+        <!-- Password -->
+        <div class="input-box">
+            <span>🔒</span>
+            <input type="password" id="password" placeholder="Password">
+        </div>
+        <!-- Message -->
+        <p id="msg"></p>
+        <!-- Remember me -->
+        <div class="options">
+            <label>
+                <input type="checkbox" checked>
+                Remember me
+            </label>
+        </div>
+        <!-- Login Button -->
+        <button type="button" class="login-btn" onclick="login()">LOG IN</button>
+        <a href="forget.html" class="forgot">Forget Password?</a>
+        <p class="signup">
+    Not a member? <a href="signup.html">Sign up now</a>
+</p>
+    </div>
+</div>
+<!-- JS (MUST be at bottom) -->
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Emotion Based Gift Chooser</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    😊 Emotion Based Gift Chooser
+  </header>
+
+  <!-- ================= EMOTION QUIZ ================= -->
+  <div id="quizBox">
+
+    <h3>😊 Emotion Quiz</h3>
+
+    <p>Q1. Aaj aap kaisa feel kar rahe ho?</p>
+    <button onclick="answer('happy')">😀 Happy</button>
+    <button onclick="answer('sad')">😔 Sad</button>
+    <button onclick="answer('angry')">😡 Angry</button>
+
+    <p>Q2. Aaj ka mood?</p>
+    <button onclick="answer('romantic')">❤️ Romantic</button>
+    <button onclick="answer('excited')">🤩 Excited</button>
+    <button onclick="answer('sad')">😞 Low</button>
+
+    <p>Q3. Gift kiske liye hai?</p>
+    <button onclick="answer('romantic')">Partner</button>
+    <button onclick="answer('happy')">Friend</button>
+    <button onclick="answer('excited')">Kids</button>
+
+    <br /><br />
+    <button onclick="detectEmotion()">🎯 Detect My Emotion</button>
+
+  </div>
+
+  <!-- ================= FILTER BAR ================= -->
+  <div class="filter-bar">
+
+    <select id="emotion">
+      <option value="">Select Emotion</option>
+      <option value="happy">Happy</option>
+      <option value="sad">Sad</option>
+      <option value="romantic">Romantic</option>
+      <option value="excited">Excited</option>
+      <option value="angry">Angry</option>
+    </select>
+
+    <select id="budget">
+      <option value="">Select Budget</option>
+      <option value="500">₹500</option>
+      <option value="1000">₹1000</option>
+      <option value="2000">₹2000</option>
+    </select>
+
+    <button onclick="getGifts()">Find Gifts</button>
+  </div>
+
+  <!-- ================= GIFTS GRID ================= -->
+  <div id="gifts"></div>
+
+  <!-- ================= PAGINATION ================= -->
+  <div id="pages"></div>
+
+  <!-- JS -->
+  <script src="dashboard.js"></script>
+
+</body>
+</html>
